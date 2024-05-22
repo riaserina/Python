@@ -12,7 +12,7 @@ elif x == y:
 # №2
 
 year = 2024
-if (year % 4 == 0 and year % 100 != 0) or year % 400 == 0:
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print("високосный год")
 else:
     print("обычный год")
@@ -93,3 +93,6 @@ elif figure == "Прямоугольник":
     ab = int(input("Введите длину стороны ab:"))
     bc = int(input("Введите длину стороны bc:"))
     print (2 * ab + 2 * bc)
+
+
+
