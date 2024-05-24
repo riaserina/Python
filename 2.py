@@ -64,43 +64,7 @@ if re.findall(pattern, car_ids):
 else:
     print(f'Номер {car_ids} не валиден')
 
-# №6
 
-stream = [
-    'user4,2021-01-01;3',
-    'user3,2022-01-07;4',
-    'user2,2022-03-29;1',
-    'user1,2020-04-04;13',
-    'user2,2022-01-05;7',
-    'user1,2021-06-14;4',
-    'user3,2022-07-02;10',
-    'user4,2021-03-21;19',
-    'user4,2022-03-22;4',
-    'user4,2022-04-22;8',
-    'user4,2021-05-03;9',
-    'user4,2022-05-11;11'
-]
-print(stream.merge())
-
-sum = 0
-index = -1
-for row in stream:
-    sum += row[index]
-    print(sum)
-
-
-pattern = r'user4\D\d\d\d\d\D\d\d\D\d\d\D\d{1,10}'
-if re.findall(pattern, stream)
-print(sorted(stream))
-
-
-
-x = int(input("Введите число:"))
-sum = 0
-while x != 0:
-    sum += x
-    x = int(input("Введите число:"))
-print(sum)
 
 
 
