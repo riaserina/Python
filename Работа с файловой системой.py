@@ -16,15 +16,13 @@ with open('purchase_log.txt', encoding = 'utf-8') as f:
 
 with open('visit_log.csv', 'r') as f, open('funnel.csv', 'w') as w_f:
     for row in f:
-        line_list=row.strip().split(',')
+        line_list = row.strip().split(',')
         if line_list[0] in new_dict.keys():
             line_list.append(new_dict[line_list[0]])
-            add_line=','.join(line_list)
-        elif line_list[0]=='user_id':
+            add_line = ','.join(line_list)
+        elif line_list[0] == 'user_id':
             line_list.append('category')
-            add_line=','.join(line_list)
+            add_line = ','.join(line_list)
         else:
-            add_line=','.join(line_list)
+            add_line = ','.join(line_list)
         w_f.write(add_line+'\n')
-
-
